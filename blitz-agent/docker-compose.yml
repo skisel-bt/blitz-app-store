@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  agent:
+    image: britva/blitz-agent:3
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_LIGHTNING_NODE_DATA_DIR}:/root/.lnd:ro
+    environment:
+      SERVER_URL: https://e26c-194-230-148-180.ngrok-free.app

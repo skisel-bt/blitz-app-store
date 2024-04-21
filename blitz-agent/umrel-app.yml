@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: blitz-agent
+category: finance
+name: BT Blitz Agent
+version: "1.0.0"
+tagline: Agent gathering LND node data
+description: >-
+  TODO
+releaseNotes: >-
+  TODO
+developer: TODO
+website: TODO
+dependencies:
+  - lightning
+repo: TODO
+support: TODO
+port: 3002
+gallery:
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: TODO
+submission: TODO
