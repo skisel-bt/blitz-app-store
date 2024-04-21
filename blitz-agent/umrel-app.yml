@@ -5,16 +5,15 @@ name: BT Blitz Agent
 version: "1.0.0"
 tagline: Agent gathering LND node data
 description: >-
-  TODO
+  Hello
 releaseNotes: >-
-  TODO
-developer: TODO
-website: TODO
+  World
+developer: Boris
+website: https://github.com/blitzbt/blitz-bt-umbrel
 dependencies:
   - lightning
-repo: TODO
+repo: https://github.com/blitzbt/blitz-bt-umbrel
 support: TODO
-port: 3002
 gallery:
 path: ""
 defaultUsername: ""
