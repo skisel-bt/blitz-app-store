@@ -15,6 +15,7 @@ dependencies:
 repo: https://github.com/blitzbt/blitz-bt-umbrel
 support: TODO
 gallery:
+  - 1.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
