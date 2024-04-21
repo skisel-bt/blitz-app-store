@@ -9,12 +9,15 @@ port: 4000
 description: >-
   Add your app's description here.
 
+
+  You can also add newlines!
+
 developer: Umbrel
 website: https://umbrel.com
 submitter: Umbrel
-submission: https://github.com/blitzbt/blitz-app-store
-repo: https://github.com/blitzbt/blitz-app-store
-support: https://github.com/blitzbt/blitz-app-store/issues
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
