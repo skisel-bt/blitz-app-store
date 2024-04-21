@@ -1,23 +1,27 @@
 manifestVersion: 1
 id: bt-blitz-agent
-category: finance
-name: BT Blitz Agent
+name: Agent
+tagline: Replace this tagline with your app's tagline
+icon: https://svgur.com/i/mvA.svg
+category: Development
 version: "1.0.0"
-tagline: Agent gathering LND node data
+port: 4000
 description: >-
-  Hello
-releaseNotes: >-
-  World
-developer: Boris
-website: https://github.com/blitzbt/blitz-bt-umbrel
-dependencies:
-  - lightning
+  Add your app's description here.
+
+developer: Umbrel
+website: https://umbrel.com
+submitter: Umbrel
+submission: https://github.com/blitzbt/blitz-bt-umbrel
 repo: https://github.com/blitzbt/blitz-bt-umbrel
-support: TODO
+support: https://github.com/blitzbt/blitz-bt-umbrel/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-submitter: TODO
-submission: https://github.com/blitzbt/blitz-bt-umbrel/pull/1
