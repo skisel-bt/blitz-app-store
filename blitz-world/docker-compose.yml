@@ -9,4 +9,4 @@ services:
     volumes:
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/root/.lnd:ro
     environment:
-      SERVER_URL: https://9c20-2001-1620-537d-0-f5ed-3a9d-90bc-8789.ngrok-free.app/
+      SERVER_URL: https://9c20-2001-1620-537d-0-f5ed-3a9d-90bc-8789.ngrok-free.app
