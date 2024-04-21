@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: bt-blitz-agent
+id: blitz-agent
 name: Agent
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
@@ -12,9 +12,9 @@ description: >-
 developer: Umbrel
 website: https://umbrel.com
 submitter: Umbrel
-submission: https://github.com/blitzbt/blitz-bt-umbrel
-repo: https://github.com/blitzbt/blitz-bt-umbrel
-support: https://github.com/blitzbt/blitz-bt-umbrel/issues
+submission: https://github.com/blitzbt/blitz-umbrel
+repo: https://github.com/blitzbt/blitz-umbrel
+support: https://github.com/blitzbt/blitz-umbrel/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
