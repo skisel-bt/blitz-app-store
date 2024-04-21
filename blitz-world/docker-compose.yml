@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   agent:
-    image: britva/blitz-agent:4
+    image: britva/blitz-agent:5
     restart: on-failure
     stop_grace_period: 1m
     volumes:
@@ -12,4 +12,5 @@ services:
     environment:
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/admin.macaroon"
-      LND_SOCKET: "${APP_LIGHTNING_NODE_IP}:${APP_LIGHTNING_NODE_GRPC_PORT}"
+      LND_HOST: "${APP_LIGHTNING_NODE_IP}"
+      LND_PORT: "${APP_LIGHTNING_NODE_GRPC_PORT}"
