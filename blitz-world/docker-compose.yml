@@ -8,9 +8,10 @@ services:
     stop_grace_period: 1m
     volumes:
       - "${APP_LIGHTNING_NODE_DATA_DIR}/tls.cert:/lnd/tls.cert:ro"
-      - "${APP_LIGHTNING_NODE_DATA_DIR}/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon:/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon:ro"
+      - "${APP_LIGHTNING_NODE_DATA_DIR}/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/admin.macaroon:/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/admin.macaroon:ro"
+    # TODO above we use admin macaroon, but should use readonly
     environment:
       LND_CERT_FILE: "/lnd/tls.cert"
-      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon"
+      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/admin.macaroon"
       LND_HOST: "${APP_LIGHTNING_NODE_IP}"
       LND_PORT: "${APP_LIGHTNING_NODE_GRPC_PORT}"
