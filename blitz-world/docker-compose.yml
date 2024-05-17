@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   agent:
-    image: britva/blitz-agent:16
+    image: skisel/blitz-agent:latest
     restart: on-failure
     stop_grace_period: 1m
     volumes:
