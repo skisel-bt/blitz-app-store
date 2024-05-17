@@ -6,23 +6,22 @@ services:
     environment:
       APP_HOST: "blitz-world_nginx_1"
       APP_PORT: 4000
-      # e.g. 'btc-rpc-explorer_web_1'
-      # Note that the '_1' at the end is needed
 
   nginx:
     image: nginx:latest
     ports:
       - "4000:80"
 
-  agent:
-    image: skisel/blitz-agent:latest
-    restart: on-failure
-    stop_grace_period: 1m
-    volumes:
-      - "${APP_LIGHTNING_NODE_DATA_DIR}/tls.cert:/lnd/tls.cert:ro"
-      - "${APP_LIGHTNING_NODE_DATA_DIR}/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon:/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon:ro"
-    environment:
-      LND_CERT_FILE: "/lnd/tls.cert"
-      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon"
-      LND_HOST: "${APP_LIGHTNING_NODE_IP}"
-      LND_PORT: "${APP_LIGHTNING_NODE_GRPC_PORT}"
+#  agent:
+#    image: skisel/blitz-agent:latest
+#    restart: on-failure
+#    stop_grace_period: 1m
+#    volumes:
+#      - "${APP_LIGHTNING_NODE_DATA_DIR}/tls.cert:/lnd/tls.cert:ro"
+#      - "${APP_LIGHTNING_NODE_DATA_DIR}/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon:/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon:ro"
+#    environment:
+#      LND_CERT_FILE: "/lnd/tls.cert"
+#      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/${APP_BITCOIN_NETWORK}/readonly.macaroon"
+#      LND_HOST: "${APP_LIGHTNING_NODE_IP}"
+#      LND_PORT: "${APP_LIGHTNING_NODE_GRPC_PORT}"
+#
