@@ -2,6 +2,13 @@ version: "3.7"
 
 services:
 
+  app_proxy:
+    environment:
+      APP_HOST: "blitz-world_agent_1"
+      APP_PORT: 4000
+      # e.g. 'btc-rpc-explorer_web_1'
+      # Note that the '_1' at the end is needed
+
   agent:
     image: skisel/blitz-agent:latest
     restart: on-failure
