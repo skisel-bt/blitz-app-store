@@ -5,7 +5,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: "blitz-world-minio-1"
-      APP_PORT: 9000
+      APP_PORT: 9001
 
   nginx:
     image: nginx:latest
@@ -16,6 +16,7 @@ services:
       - minio
       - server
       - /data
+      - --console-address ":9001"
     volumes:
       - "${APP_DATA_DIR}/data/app:/data"
 

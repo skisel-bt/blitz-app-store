@@ -4,7 +4,7 @@ name: Agent
 tagline: Replace this tagline with your app's tagline
 icon: https://dashboard.bricktowers.io/brick-towers-bird-logo.svg
 category: Development
-version: "1.0.14"
+version: "1.0.15"
 port: 4000
 description: >-
   Add your app's description here.
