@@ -4,7 +4,7 @@ name: Agent
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
 category: Development
-version: "1.0.9"
+version: "1.0.10"
 port: 4000
 description: >-
   Add your app's description here.
@@ -24,7 +24,7 @@ gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Add what's new in the latest version of your app here.
-dependencies: []  
+dependencies: [lightning]
 path: ""
 defaultUsername: ""
 defaultPassword: ""
