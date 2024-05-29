@@ -11,7 +11,7 @@ services:
     image: nginx:latest
 
   agent:
-    image: skisel/blitz-agent:7
+    image: skisel/blitz-agent:8
     restart: on-failure
     stop_grace_period: 1m
     volumes:
@@ -24,3 +24,4 @@ services:
       LND_HOST: "${APP_LIGHTNING_NODE_IP}"
       LND_PORT: "${APP_LIGHTNING_NODE_GRPC_PORT}"
       AUTHENTICATOR_SERVICE_ACCOUNT_PATH: "/data/service-account.json"
+      LOG_FOLDER: "/data/logs"
