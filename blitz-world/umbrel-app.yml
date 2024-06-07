@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: blitz-world
-name: Agent
+name: Blitz Agent
 tagline: Replace this tagline with your app's tagline
 icon: https://dashboard.bricktowers.io/brick-towers-bird-logo.svg
 category: Development
-version: "1.0.21"
+version: "1.0.22"
 port: 4000
 description: >-
   Add your app's description here.
